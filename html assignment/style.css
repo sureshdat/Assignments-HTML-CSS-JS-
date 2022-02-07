@@ -1,0 +1,38 @@
+body{
+    margin:auto;
+    padding: 0%;
+
+}
+.smily{
+    height: 200px;
+    width:200px;
+    top:50%;
+    bottom: 50%;
+    width:200px;
+    height:200px;
+    background-color: yellow;
+    border-radius: 50%;
+    border:5px solid;
+}
+.eyes:before, .eyes:after{
+    content:"";
+    position:absolute;
+    top:30%;
+    width:1%;
+    height:1%;
+    background: #442200;
+    border-radius: 50%;
+    transition:0.5s;
+
+
+}
+
+.eyes:before{
+    left:5%;
+    top:10%;
+
+}
+.eyes:after{
+    right:80%;
+    top:10%;
+}

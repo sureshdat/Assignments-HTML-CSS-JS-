@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment2</title>
+    <link rel="stylesheet" href="../html assignment/style2.css">
+</head>
+
+<body>
+    <div id="para">
+
+        <p>The selector argument for the query selectr and queryselector all metods accept a selector string.The query
+            methods on the document,documentfragment, and Element interface must return the first matching element nodethe subtrees of the context objec.If there is no matching element,The method must return null..
+            The query selector ethod on the document,DocumentFragment, and Element intrefaces must return a nodelist..
+        </p>
+
+    </div>
+    <button onClick="changeColor('Red')">Red</button>
+
+    <script>
+        function changeColor(newColor)
+        {
+            var col=document.querySelector('#para');
+            col.style.color=newColor;
+        }
+         </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>

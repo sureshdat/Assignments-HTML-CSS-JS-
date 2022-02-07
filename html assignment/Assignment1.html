@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>Trace browser location in the form of Latitude and Longitude</title>
+</head>
+
+<body>
+    <h1>Hello,Lets Trace Browser Location</h1>
+    <button onClick="getLocation()">GetLocation</button>
+    <!--Output will go here-->
+    <div id="output"></div>
+    </body>
+   
+    <script>
+        var x = document.getElementById('output');
+
+        function getLocation() {
+            if (navigator.geolocation) {
+                navigator.geolocation.getCurrentPosition(showPosition);
+            }
+            else {
+                x.innerHTML = "Browser not Suporting";
+            }
+        }
+
+        function showPosition(position)
+        {
+            x.innerHTML="latitude ="+position.coords.latitude;
+          
+           
+           
+           
+
+        }
+    </script>
+
+
+
+</html>
